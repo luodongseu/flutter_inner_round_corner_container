@@ -6,6 +6,17 @@ import 'package:flutter/material.dart';
 /// 内部圆角裁剪工具
 ///
 /// @author luodong
+/// ClipPath(
+///    clipper: new InnerRoundCornerCliper(
+///       topLeftRadius: 12.0 + _counter,
+///       bottomRightRadius: 20.0 - _counter),
+///    child: new Container(
+///      width: 200,
+///      height: 200,
+///      color: Colors.red,
+///    ),
+/// ),
+///
 class InnerRoundCornerCliper extends CustomClipper<Path> {
   /// 左上角圆角大小
   final double topLeftRadius;
